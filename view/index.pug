@@ -1,0 +1,110 @@
+extends base.pug
+
+block title 
+    title Curriculum vitae
+
+block main
+    .page-content
+     .container
+      .cover.shadow-lg.bg-white
+       .cover-bg.p-3.p-lg-4.text-white
+        .row
+          .col-lg-4.col-md-5
+           .avatar.hover-effect.bg-white.shadow-sm.p-1 #[img(src="avatar.jpg" width="200" height="200")]
+          .col-lg-8.col-md-7.text-center.text-md-start 
+           h2.h1.mt-2 Santiago Alfonso Herrera
+           p FullStack Developer
+       .about-section.pt-4.px-3.px-lg-4.mt-1 
+        .row 
+         .col-md-6
+          h2.h3.mb-3  About me 
+          p I am a responsible, proactive, goal-oriented person with the ability to acquire new knowledge. I stand out for being a very complete Full-Stack developer, evaluating each situation and each error in the shortest possible time and in turn giving solution easily, I've working in this field for 4 years up to now with Microservices, AzureDevOps, JavaScript, React.js, Java, HTML, CSS, C#, VB.net, SQL Server and MongoDb.
+         .col-md-5.offset-md-1 
+          .row.mt-2
+             .col-sm-4
+              .pb-1 Age
+             .col-sm-8.text-secondary
+              .pb-1 25
+             .col-sm-4
+              .pb-1 Mail
+             .col-sm-8.text-secondary
+              .pb-1 santiagoah27@hotmail.com
+             .col-sm-4
+              .pb-1 Phone
+             .col-sm-8.text-secondary
+              .pb-1 +57 3125429208
+             .col-sm-4
+              .pb-1 City
+             .col-sm-8.text-secondary
+              .pb-1 Bogotá D.C, Colombia
+       hr.d-print-none
+       .skills-section.px-3.px-lg-4
+        h2.h3.mb-3 Professional Skills
+        .row
+         .col-md-6
+          .mb-2 #[span HTML]
+           .progress.my-1
+            .progress-bar.bg-primary(role="progressbar"  style="width: 95%; background-color: #020e1f!important;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100")
+          .mb-2 #[span CSS]
+           .progress.my-1
+            .progress-bar.bg-primary(role="progressbar"  style="width: 85%; background-color: #020e1f!important;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100")
+          .mb-2 #[span JavaScript]
+           .progress.my-1
+            .progress-bar.bg-primary(role="progressbar"  style="width: 95%; background-color: #020e1f!important;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100")
+          .mb-2 #[span VB.Net]
+           .progress.my-1
+            .progress-bar.bg-primary(role="progressbar"  style="width: 95%; background-color: #020e1f!important;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100")
+         .col-md-6
+          .mb-2 #[span C#]
+           .progress.my-1
+            .progress-bar.bg-primary(role="progressbar"  style="width: 85%; background-color: #020e1f!important;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100")
+          .mb-2 #[span React.js]
+           .progress.my-1
+            .progress-bar.bg-primary(role="progressbar"  style="width: 85%; background-color: #020e1f!important;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100")
+          .mb-2 #[span SQL Server]
+           .progress.my-1
+            .progress-bar.bg-primary(role="progressbar"  style="width: 80%; background-color: #020e1f!important;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100")
+          .mb-2 #[span MongoDB]
+           .progress.my-1
+            .progress-bar.bg-primary(role="progressbar"  style="width: 90%; background-color: #020e1f!important;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100")   
+       hr.d-print-none
+       .work-experience-section.px-3.px-lg-4  
+        h2.h3.mb-4 Work Experience
+        .timeline
+         .timeline-card-primary.card.shadow-sm 
+          .card-body
+           .h5.mb-1 FullStack Developer #[span.text-muted.h6 at KinPOS Corporation]
+           .text-muted.text-small.mb-2 June 2018 - Currently 
+           div(style="text-align: justify;") Develop web interfaces using MVC with JS, HTML5, React.js, Node.js and CSS3, and in turn program the back-end of these interfaces with their respective communication to the DB using Linq or QueryExpression.
+        .timeline
+         .timeline-card-primary.card.shadow-sm 
+          .card-body
+           .h5.mb-1 FullStack Developer #[span.text-muted.h6 at Kin And Carta]
+           .text-muted.text-small.mb-2 Diciembre 2021 - Currently 
+           div(style="text-align: justify;") Full Stack developer in Consulting and development web interfaces using microservices for different features according the project with technologies like React.js on the front end and C# on the back end.
+       hr.d-print-none
+       .page-break
+       .education-section.px-3.px-lg-4.pb-4
+        h2.h3.mb-4 Courses 
+        .timeline 
+         .timeline-card-success.card.shadow-sm 
+          .card-body  
+           .h5.mb-1
+            a(href="Scrum.jpg") Scrum Fundamentals Certified 
+            span.text-muted-h6 at SCRUM study
+           .text-muted.text-small.mb-2 2021
+       hr.d-print-none
+       .page-break
+       .education-section.px-3.px-lg-4.pb-4  
+        h2.h3.mb-4 Education
+        .timeline
+         .timeline-card-success.card.shadow-sm 
+          .card-body
+           .h5.mb-1 Software Development Technician #[span.text-muted.h6 From Politécnico Internacional]
+           .text-muted.text-small.mb-2 2017-2021
+        .timeline
+         .timeline-card-success.card.shadow-sm 
+          .card-body
+           .h5.mb-1 High School #[span.text-muted.h6 From Instituto Pedagógico Nacional]
+           .text-muted.text-small.mb-2 2010-2015
+
